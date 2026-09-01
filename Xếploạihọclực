@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Nhập điểm trung bình: ");
+        double diemTB = scanner.nextDouble();
+
+        if (diemTB >= 8.5) {
+            System.out.println("Xếp loại: Giỏi");
+        } else if (diemTB >= 7.0) {
+            System.out.println("Xếp loại: Khá");
+        } else if (diemTB >= 5.0) {
+            System.out.println("Xếp loại: Trung bình");
+        } else {
+            System.out.println("Xếp loại: Yếu");
+        }
+
+        scanner.close();
+    }
+}
